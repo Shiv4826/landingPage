@@ -1,0 +1,127 @@
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+
+        }
+       
+        .down{
+            margin-top: 100px;
+            font-size: 50px;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background:linear-gradient( white,pink,white);
+            box-shadow: 0px 0px 5px 5px gray;
+        }
+        button{
+            background-color: #4CAF50;
+            width: 100%;
+            color:orange;
+            padding:15px;
+            margin:10px 0px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px 5px gray;
+        }
+        
+        input[type=email],input[type=password]{
+            width:100%;
+            margin:8px 0;
+            padding:12px 20px;
+            display:inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 5px 5px gray;
+        }
+        button:hover{
+            opacity:0.7;
+        }
+        .cancelbtn{
+            width: auto;
+            padding:10px 18px;
+            margin: 10px 5px;
+
+                }
+
+        .container{
+
+            padding:25px;
+            background-color: lightblue;
+            box-shadow: 0px 0px 5px 5px gray;
+            height: 80vh;
+            background-image: url('login.jpg');
+            background-size: cover;
+            background-position: center;
+           background-attachment: fixed;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 0px 0px 5px gray;
+        }
+        input{
+            border-radius: 30px;
+            border:5px solid black;
+            font-size: 30px;
+
+        }
+        .in:focus{
+            border-radius: 30px;
+            background: linear-gradient(white,cyan,white);
+            border:1px solid black;
+        }
+        button{
+            border-radius: 30px;
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:active{
+        color:aqua;
+        }
+        @media only screen and (max-width: 500px) {
+            .container{
+
+
+            height: 92vh;
+}
+
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <h1 style="font-size: 50px;"><b>Student Login From</b></h1>
+    <br>
+</body>
+<form action="thanks.html" method="post">
+   
+<div class="container">
+<div class="down">
+  
+
+        <label >Username:</label>
+        <input type="email" name="" class="in" placeholder="name@gmail.com" multiple required>
+        <label >Password:</label>
+        <input type="password" name=""class="in" placeholder="Enter Password" required maxlength="">
+        <button type="submit">Login</button>
+        
+        
+        Forget &ensp;<a href="#">password?</a>
+        <div class="signup_link">
+            Not a Member ? <a href="SignUP_Form.html">Signup</a>
+        </div>
+    </div>
+    </div>
+    </form>
+
+</html>

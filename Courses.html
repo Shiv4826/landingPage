@@ -1,0 +1,891 @@
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+*{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 18px;
+  
+}
+form{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+    .input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical 
+}
+input {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.input:focus{
+    font-size: 30px;
+    background: linear-gradient(to right,white,aqua,white);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 5px white;
+    color:black;
+  
+  
+    border:2px solid black;
+}
+
+
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    h6{
+            scroll-behavior: smooth;
+        }
+
+
+        h3{
+            scroll-behavior: smooth;
+        }
+        h4{
+            scroll-behavior: smooth;
+        }
+
+
+
+
+
+
+    body{
+        background: linear-gradient(to bottom,white,cyan,pink,aquamarine,white);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+    
+
+        
+      
+      
+    }
+
+
+    .Back_to_Top{
+        background:gray;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color:gray;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 0px 0px 5px 2px black;
+        width:100%;
+        margin-top: 604px;
+       
+
+    }
+
+
+    .socialButton{
+        
+            margin-left: 390px;
+            font-size: 60px;
+            margin-top: 50px;
+            font-weight: bold;
+            
+    }
+
+    .fa{
+            color:white;
+           
+            letter-spacing: 50px;
+        }
+
+
+        .fa:hover{
+       
+          
+       
+            cursor: pinter;
+            transform:scale(1.5);
+            
+                -webkit-text-stroke-color:aquamarine;
+            -webkit-text-stroke-width:2px;
+            -webkit-text-fill-color:black;
+
+        }
+
+
+        .follow{
+            color:gray;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: -300px;
+
+        }
+
+
+  
+  
+
+
+    img {
+ -webkit-filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+ filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+}
+
+    header{
+        position: fixed;
+        top: 20px;
+        width: 100%;
+        background: #0c0717;
+        z-index: 1;
+        box-shadow: 0px 0px 5px 5px black;
+        border-radius: 20px;
+        word-spacing: 50px;
+
+    
+      
+       
+    }
+ 
+  
+   
+    .courses{
+       
+        height: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+      
+      
+    }
+    .main{
+        border:2px solid white;
+        height:40vh;
+        margin: 5px 5px 5px 5px;
+       
+        border-radius: 20px;
+        overflow: hidden;
+
+        position:relative;
+        box-shadow: 0px 0px 5px 5px black;
+    
+      
+       
+       
+       
+     
+    }
+    .main:hover{
+        transform: scale(0.9);
+  
+    }
+    .grid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    margin-top: -100px;
+    overflow: hidden;
+    
+    
+   
+   
+    }
+
+
+
+    .h2{
+        position:fixed; 
+        top:100px; 
+        font-size: 25px; 
+        z-index: 1; 
+        text-decoration: underline;
+        
+    }
+    .footer{
+                width:100%;
+                height:167vh;
+                box-shadow: 0px 0px 5px 5px black;
+                background: #000000;
+                margin-top:667px;
+                padding:70px 0 8;
+                font-size: 5 em;
+                box-sizing: border-box;
+                border-radius: 10px;
+               
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               
+            }
+    .footer .cont{
+
+        max-width: 100%;
+            margin:auto;
+    }
+    .footer  .row{
+       
+        flex-wrap: wrap;
+        display: flex;
+        width:100%;
+        color:#3f0071;
+
+    }
+    .footer .row>div{
+        padding:0 25px;
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            flex-grow: 1;
+    }
+
+    .footer .row p{
+        margin:20px 0;
+          
+    }
+    ul{
+            list-style: none;
+           
+            margin-top:-1px;
+            line-height: 100px;
+            margin-left:500px;
+          
+        
+          
+        }
+        a{
+            text-decoration: none;
+           
+            -webkit-text-stroke-width:2px;
+            -webkit-text-fill-color:black;
+        
+       
+           
+           
+        }
+        a:active{
+        color:cyan;
+    }
+      
+        .main2{
+            margin-top:50px;
+            margin-left:-30px;
+        }
+        .main3{
+            margin-top:50px;
+            margin-left:-10px;
+        }
+        ul{
+            margin-left: 10px;
+        }
+
+
+   
+        @media only screen and (max-width: 500px) {
+
+
+
+
+
+
+            .footer{
+                margin-top: 8px;
+                width:105%;
+                height:133vh;
+               
+                padding:0;
+                font-size: small;
+            }
+
+
+
+
+            .cont{
+        
+        width:198%;
+        height: 395vh;
+        margin-top:200px;
+     
+        box-shadow: 0px 0px 5px 5px black;
+       
+        background-color: black;
+
+        
+      }
+
+
+
+      .grid{
+    
+
+    grid-column-gap:10px;
+    grid-row-gap:28px;
+        width:205%;
+
+      }
+      .footer .cont{
+            max-width: 1170px;
+            margin:auto;
+        
+           
+        }
+            ul{
+            list-style: none;
+            margin-left:50px;
+            margin-top:-2px;
+            line-height:85px;
+            font-size: 0px;
+          
+        }
+        .main3{
+          
+            margin-left:-10px;
+        }
+        }
+        header{
+        position: fixed;
+        top: 10px;
+        width: auto;
+        background: #0c0717;
+        z-index: 1;
+        box-shadow: 0px 0px 5px 5px black;
+        border-radius: 10px;
+        word-spacing: 50px;
+     
+
+
+    
+      
+       
+    }
+    header h1{
+
+        font-size: 50px;
+    }
+   
+        .h2{
+            font-size: 25px;
+        }
+
+        .socialButton{
+        
+       
+        font-size: 80px;
+        font-weight: bold;
+        margin-top:50px;
+        margin-left:500px;
+       
+        
+}
+.fa{
+        color:white;
+       
+        letter-spacing: 10px;
+    }
+  
+ 
+   
+    .follow{
+            color:gray;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: -430px;
+            letter-spacing: 5px;
+            ;
+            margin-top:-60px;
+            
+
+        } 
+        
+
+    .Back_to_Top{
+      
+        margin-top: 1850px;
+        width: 209%;
+        margin-left: -50px;
+       
+
+    }
+
+        .container {
+  
+  margin-top: 1680px;
+  width:198%;
+  
+}
+.main{
+    margin-top:-20px;
+}
+
+    
+    
+   
+    
+    @media only screen and (min-width: 500px){
+
+
+body{
+    overflow-x: scroll;
+}
+            .footer{
+                margin-top: 8px;
+                width:128%;
+                height:500vh;
+               
+                padding:0;
+                font-size: small;
+            }
+         
+
+            .cont{
+        
+        width:128%;
+        height: 550vh;
+        margin-top:200px;
+     
+        box-shadow: 0px 0px 5px 5px black;
+       
+        background-color: black;
+
+        
+      }
+
+      header{
+        position: fixed;
+        top: 10px;
+        width: 100%;
+        background: #0c0717;
+        z-index: 1;
+        box-shadow: 0px 0px 5px 5px black;
+        border-radius: 10px;
+        word-spacing: 50px;
+     
+
+
+    
+      
+       
+    }
+      
+      .grid{
+        grid-column-gap:5px ;
+        grid-row-gap:20px;
+        width:128%;
+
+
+margin-top: -70px;
+
+
+}
+.Back_to_Top{
+      
+      margin-top: 1150px;
+      width: 103%;
+      margin-left: -50px;
+      background-color: black;
+      
+     
+
+  }
+  .Back_to_Top h4{
+  margin-left:-150px;
+  }
+  .container {
+  
+  margin-top: 208px;
+  width:126%;
+  
+}
+
+.follow{
+            color:gray;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left:100px;
+            margin-top:-120px;
+          
+          
+            
+            
+
+        } 
+        
+    .socialButton{
+        
+        margin-left: 20px;
+        font-size: 60px;
+        margin-top: 150px;
+        font-weight: bold;
+        line-height: -2px;
+        letter-spacing: 3px;
+      
+        
+}
+
+
+    }
+
+
+    .wrapper{
+        position: fixed;
+        inset:0;
+        z-index: 9999;
+        background-color: #fff;
+        display: flex;
+        place-items: center;
+        transition: opacity 5s, visibility 2s;
+    }
+    .fade{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    
+   
+</style>
+<body>
+
+    <script>
+        const fadeOut =() =>
+        {
+            const loaderWrapper=
+            document.querySelector('.wrapper');
+            loaderWrapper.classList.add('fade');
+        
+
+
+        }
+        window.addEventListener('load',fadeOut);
+    </script>
+
+    <div class="wrapper">
+        <div class="loadesr"></div>
+
+    </div>
+    <hr>
+   
+    <div class="courses">
+        
+        <header style="text-align: center; font-size: 30px ; margin-top: -10px;">
+            <nav>
+                <a href="index.html">Home</a>
+                &ensp;
+                <a href="#top">Courses</a>
+                &ensp;
+            
+               
+                
+                <a href="#bottom">About_Us</a>
+                &ensp;
+                <a href="#bott">Feedback_US</a>
+                
+               
+               
+                &ensp;
+         
+                
+                <a href="#bot">Follow_Us</a>
+                &ensp;
+                <a href="car_racing.html">My_Projects</a>
+                
+            </nav>
+       
+        </header>
+       
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       &ensp;
+       &ensp;
+       &ensp;
+       &ensp;
+       &ensp;
+       <h2 class="h2">Full-stack Developer</h2>
+
+
+      
+       <div>
+        
+        <div class="grid">
+          
+
+        <div  class="main">
+           
+       <a href="https://www.html.com"><img src="HTML.png" alt="" width="100%" height="100%"></a>
+
+        </div>
+        <div class="main">
+            <a href="https://www.css-tricks.com"><img src="CSS.png" alt="" width="100%" height="100%"></a>
+
+        </div>
+        <div class="main">
+            <a href="https://www.javascript.com"><img src="javascript.png" alt="" width="100%" height="100%"></a>
+
+        </div>
+        <div class="main">
+            <a href="https://www.react-tutorial.app"><img src="R.png" alt="" width="100%" height="100%"></a>
+
+        </div>
+        <div class="main">
+            <a href="https://www.getbootstrap.com"><img src="Bootstrap.png" alt="" width="100%" height="100%"></a>
+
+        </div>
+        
+
+        <div  class="main">
+            <a href="https://www.geeksforgeeks.com"><img src="Angular.png" alt="" width="100%" height="100%"></a>
+
+        </div>
+      
+        <div class="main">
+           <a href="https://www.nodejs.com"><img src="nodejs.jpg" alt="" width="100%" height="100%"></a>
+    
+            </div>
+            <div class="main">
+                <a href="https://www.php.com"><img src="php.jpg" alt="" width="100%" height="100%"></a>
+    
+            </div>
+            <div class="main">
+                <a href="https://www.python.com"><img src="python.jpg" alt="" width="100%" height="100%"></a>
+    
+            </div>
+            <div class="main">
+                <a href="https://www.java.com"><img src="java.jPG" alt="" width="100%" height="100%"></a>
+    
+            </div>
+            <div class="main">
+                <a href="https://www.perl.com"><img src="Perl.jpg" alt="" width="100%" height="100%"></a>
+    
+            </div>
+            
+    
+            <div  class="main">
+                <a href=""><img src="ruby.jpg" alt="" width="100%" height="100%"></a>
+    
+  
+    </div>
+    
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+            <footer class="footer">
+                <h6 id="bottom"></h6>
+
+
+                <div class="cont">
+
+                    <div class="row">
+                        
+                        <div class="society">
+                           
+                            <h3 style="color:gray; font-size: 35px; margin-left:10px; margin-top: 5px;">What is Full-stack Developer?</h3>
+                  
+                            
+                            <p style="font-size: 30px; line-height: 50px; ">
+                     
+                                A Full-Stack Developer is a programer or a developer who handeled the frontend and backend of website.
+                                A full stack  developer also  can develop both client and server software. In addition to mastering HTML 
+                                and CSS, 
+                                he/she also knows how to: Program a browser 
+                                (like using JavaScript, jQuery, Angular, or Vue) Program a server (like using PHP, ASP, Python, or Node)
+                                for becoming the full-stack developer we should must know about the frontend development language 
+                                including- HTML, CSS, JAVASCRIPT, REACT JS, ANGULAR JS.
+                                and also too know about the Backend development language including- NODE JS, PHP, PYTHON, JAVA, RUBY.
+                               </p>
+
+
+
+                        </div>
+                        &emsp;
+                        &emsp;
+                        
+                        <div class="main2">
+                            
+                            <h4 style="text-align: center ;color:gray; font-size: 35px; margin-left:-350px;">Pages</h4>
+                            <hr>
+                            <ul style="font-size: 50px;">
+                               
+                                <li> <a href="#">About Us</a></li>
+                                <li> <a href="#">Our Service</a></li>
+                                <li> <a href="#">Privacy & Policy</a></li>
+                                <li> <a href="#">Affiliate Program</a></li>
+                                <li> <a href="#">Contact Us</a></li>
+                            </ul>
+                            &ensp;
+                        </div>
+                        <div class="main3"><h4 style="text-align:center; color:gray; font-size: 35px; margin-left: -350px;">Help</h4>
+                          <hr>
+                        <ul style="font-size: 50px;">
+                            <li> <a href="#">FAQ</a></li>
+                                <li> <a href="#">Shhipping</a></li>
+                                <li> <a href="#">Order status</a></li>
+                                <li> <a href="#">Payouts</a></li>
+                                <li> <a href="#">Payment Options</a></li>
+          
+          
+                        </ul>
+                    </div>
+                   
+                    </div>
+                   
+                </div>
+                <br>
+                
+                  
+                
+             
+                
+                <div class ="Back_to_Top">
+                   <a href="#top"> <h4 > < Back to Top ></h4></a>
+                   <hr>
+                   <hr>
+                </div>
+            </footer>
+
+            <div class="container">
+                <br>
+                <h5 style="font-size: 25px; color:gray; margin-top: -20px;">For more details send message to us</h5>
+                    <br>
+                    <br>
+                 <h4>   Asterics* shows important!</h4>
+                
+  
+                <br>
+                <form action="thanks.html" method="post">
+                    <h4 id="bott"></h4>
+                   
+              
+                  <label for="fname">First Name *</label>
+                  <input type="text"  class = "input"id="fname" name="firstname" placeholder="Your first name.." required="">
+              
+                  <label for="lname">Last Name *</label>
+                  <input type="text" class = "input" id="lname" name="lastname" placeholder="Your last name.." required="">
+              
+                  <label for="country">Country *</label>
+                  <select id="country" name="country" >
+                    <option>Please select a country</option required>
+                        <option value="australia">India</option>
+                    
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject *</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"  required=""></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+
+                  
+                &ensp;
+               
+
+                <div class="socialButton">
+                    <h3 id="bot"></h3>
+
+                  <p class="follow" >  Now, Follow us on here </p>
+                  <hr>
+                  <br>
+               
+                    <a  href="https://www.instagram.com/i_amsk22"><i class="fa fa-instagram"></i></a>
+                    &emsp;
+                    <a href="https://www.facebook.com/shivam kumar"><i class='fa fa-facebook'></i></a>
+                    &emsp;
+                    <a href="https://www.twitter.com"><i class='fa fa-twitter'></i></a>
+                    &emsp;
+                    <a href="https://www.telegram.com/shivam kumar"><i class='fa fa-telegram'></i></a>
+                    &emsp;
+                    <a href="https://www.google.com/shivam kumar" ><i class='fa fa-google'></i></a>
+                    &emsp;
+                    <a href="https://www.quora.com/Shivam Kumar'S space28" ><i class='fa fa-quora'></i></a>
+                    
+                </div>
+
+                </div>
+          
+                
+          
+
+
+
+
+
+
+
+          
+ 
+
+
+       
+   
+   
+
+
+
+       
+          
+
+            
+    
+
+        
+  
+       
+
+      
+
+
+      
+ 
+
+
+
+    
+</body>
+</html>

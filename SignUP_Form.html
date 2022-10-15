@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        <h1>SignUP Form</h1>
+    </title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+     
+            .main{
+             
+               color: black;
+               overflow-x: hidden;
+               background-image:url('background3.jpg');
+            
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-attachment: fixed;
+             background-position: 50%;
+
+          
+            
+             
+              
+       
+       
+         
+
+        }
+        .address{
+            width: 300px;
+
+        }
+        .address:focus{
+            font-size: 30;
+        }
+         
+      
+       
+        form{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+          
+            border-radius: 1%;
+         
+            width: 100%;
+            height: 100%;
+          
+            padding:5px 0px 0px 45px;
+            
+            
+           
+           
+           
+           
+        }
+        .input{
+           height: 35px;
+           width: 200px;
+           border-radius: 50px;
+          
+        }
+        .input:focus{
+            border-radius: 40px;
+            width: 300px;
+            box-shadow: 0px 0px 5px 2px white;
+            
+            background: linear-gradient(green,white,white,white);
+            border:px solid black;
+            font-size: 30px;
+        }
+        .btn{
+            height: 35px;
+           width: 200px;
+             border-radius: 50px;
+            
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+
+        }
+        .Gender{
+            height: 35px;
+           width: 200px;
+
+        }
+        .Gender:hover{
+            cursor: pointer;
+        }
+        .address:focus{
+            background: linear-gradient(green,white,white,white);
+            border:px solid black;
+
+        }
+        @media only screen and (max-width: 500px) {
+            .input{
+           height: 35px;
+           width: 300px;
+           border-radius: 50px;
+        }
+    
+      form{
+        width:100%;
+        height:100%;
+    
+        
+        
+    
+        
+        
+      }
+     
+        body{
+                background-color: black;
+               
+            }
+    }
+           
+
+       .main{
+        
+        height: 90vh;
+    
+        
+        
+       }
+        @media only screen and (min-width: 500px) {
+
+            .main{
+             
+             color: black;
+             overflow-x: hidden;
+             background-image:url('background3.jpg');
+            
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-attachment: fixed;
+             margin-left: -200px;
+
+           
+            }
+            body{
+                background-color: black;
+            }
+            
+        .align{
+            text-align: center;
+            font-size: 50px;
+            background-color: gray;
+            
+        }
+             
+            
+            
+           
+             
+            
+     
+     
+       
+
+      
+      form{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+           
+            border-radius: 1%;
+         
+         
+           
+            
+            height:50vh;
+           
+            padding:5px 0px 0px 45px;
+            margin-left:300px;
+            margin-top:200px;
+            
+            
+           
+           
+           
+           
+        }
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <h3 class="align"><u><b><i>SignUP Form</u></i></b></h3>
+        
+        <div class="main">
+            
+        
+        
+            <form action="thanks.html" method="post" >
+                
+
+                
+                    
+                  
+                   
+
+                    <u><h6>Required * as important</h6></u>
+
+                First Name:*<input class ="input"type="text" name="" value="" required="" placeholder="Enter First Name">
+                <br>
+                <br>
+                Last Name:*<input class ="input"type="text" name="" value="" required=""placeholder="Enter Last Name">
+                <br>
+                <br>
+                E-Mail:*<input class ="input"type="emailAddress" multiple value="" placeholder="sophie@gmail.com" required="" >
+                <br>
+                <br>
+                Phone No.*<input class ="input"type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required=""placeholder="Format:123-456-7890">
+                <br>
+                <br>
+               
+                    Address:*   <textarea  class="address"name="address" name="address" required="" maxlength="100" autofocus="" style="height:100px"; >
+                        
+                    </textarea>
+                    
+                       
+                <br>
+                <br>
+                Gender:
+                <br>
+                <input  class ="Gender"type="radio" name="gender" value="m">Male 
+                       <input class ="Gender"type="radio" name="gender" value="f">Female
+                       <input class ="Gender"type="radio" name="gender" value="other">Other
+                       <br>
+                       <br>
+                <input type="submit" class ="btn"name ="send" value="send">
+                <input type="reset" class ="btn"name="reset" value="reset">
+
+
+            
+        
+            </form>
+        </div>
+    </body>
+
+    
+
+    
+</html>
